@@ -24,7 +24,7 @@ body {
     color: blue;
 }
 
-/*input*/
+/*Input*/
 
 #txt-input {
     height: 20vh;
@@ -35,11 +35,11 @@ body {
     margin-top: 2rem;
     width: 80%;
     font-size: large;
-    background-color: #ececbd;
-    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    background: transparent;
 
 }
 
+/*Button*/
 #btn-translate {
     display: block;
     margin: auto;
@@ -51,30 +51,37 @@ body {
     background-color: var(--primaryColor);
 }
 
+#clear-txt{
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color:var(--primaryColor);
+    margin: auto;
+    margin-top: 1rem ;
+    width: 10%;
+    text-align: center;
+    padding: auto;
+    font-weight: bold;
+}
+
+/*Output*/
+
 #output-heading {
-    padding: 1rem;
+    
+    padding-top: 2rem; 
     text-align: center;
     font-weight: bold;
     font-size: large;
     font-style: oblique;
-     min-width: 100px;
+    min-width: 100px;
 
 }
 
-
 #output {
-    /* border: 1px solid black;
-    width: 58%;
-    height: 10rem;
-    margin: auto;
-    padding: 1rem;
-    font-size: large; */
-    /* border-color:(rgb(118, 118, 118); */
-
 
     border: 1px solid black;
     border-color:rgb(118, 118, 118);
-    height: 20vh;
+    min-height: 20vh;
+    height: 20res;
     padding: 1rem;
     margin: auto;
     display: block;
@@ -84,3 +91,18 @@ body {
     font-size: large;
     
 }
+
+/*footer*/
+
+.footer{
+    background-color: var(--primaryColor);
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+.footer-content {
+    width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
