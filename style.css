@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0px;
+    margin: 0rem;
     background-color: #ececbd;
     background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
@@ -57,7 +57,7 @@ body {
     background-color:var(--primaryColor);
     margin: auto;
     margin-top: 1rem ;
-    width: 15%;
+    width: auto;
     text-align: center;
     padding: auto;
     font-weight: bold;
@@ -101,8 +101,8 @@ body {
     padding: 1rem;
 }
 .footer-content {
-    width: 600px;
-    margin: auto;
-    text-align: left;
+    
+    max-width: 30rem;
+    margin:auto;
 }
 
