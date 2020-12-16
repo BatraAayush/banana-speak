@@ -11,12 +11,12 @@ function getTranslationURL(text) {
 
 function clickHandler() {
 
-        var inputText = txtInput.value;
-        fetch(getTranslationURL(inputText))
+        // var inputText = txtInput.value;
+        fetch(getTranslationURL(txtInput.value))
         .then(response => response.json())
         .then(json => {
-            var translatedText = json.contents.translated;
-            outputDiv.innerText = translatedText;
+            // var translatedText = json.contents.translated;
+            outputDiv.innerText = json.contents.translated;
         })  
     };
 
