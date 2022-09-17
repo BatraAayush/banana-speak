@@ -20,10 +20,10 @@ function clickHandler() {
             .then(response => response.json())
             .then(json => {
                 // var translatedText = json.contents.translated;
-                if(json.contents.translated === "") {
-                    outputDiv.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
+                if(json.contents.translated === undefined) {
+                    error.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
                 } else {
-                    errorMsg.innerText = json.contents.translated;                    
+                    outputDiv.innerText = json.contents.translated;                    
                 }
             })  
         }
