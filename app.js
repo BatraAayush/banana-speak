@@ -10,6 +10,11 @@ function getTranslationURL(text) {
     return serverURL + "?" + "text="+ text
 }
 
+function errHandler(err) {
+    errorMsg.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
+
+}
+
 function clickHandler() {
         errorMsg.innerText = "";
         // var inputText = txtInput.value;
@@ -20,12 +25,9 @@ function clickHandler() {
             .then(response => response.json())
             .then(json => {
                 // var translatedText = json.contents.translated;
-                if(json.contents.translated === undefined) {
-                    error.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
-                } else {
                     outputDiv.innerText = json.contents.translated;                    
-                }
             })  
+            .catch(errHandler)
         }
 
     };
