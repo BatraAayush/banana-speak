@@ -23,7 +23,7 @@ function clickHandler() {
                 if(json.contents.translated === "") {
                     outputDiv.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
                 } else {
-                    outputDiv.innerText = json.contents.translated;                    
+                    errorMsg.innerText = json.contents.translated;                    
                 }
             })  
         }
