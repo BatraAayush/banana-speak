@@ -11,8 +11,8 @@ function getTranslationURL(text) {
 }
 
 function errHandler(err) {
+    console.log("error: " + err);
     errorMsg.innerHTML = "ERROR! No output returned from API. May be no of api calls exceded. Please try again after an hour.";
-
 }
 
 function clickHandler() {
