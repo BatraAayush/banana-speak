@@ -3,7 +3,7 @@ An app to translate english to minion language.</br>
 If you are fan of minions, you are gonna love this app.</br>
 Visit to see Project => [Banana Speak](https://banana-speak-gui-app.netlify.app/)
 
-## TECHSTACK USED
+## Techstack Used
 1. HTML
 2. CSS
 3. Javascript
